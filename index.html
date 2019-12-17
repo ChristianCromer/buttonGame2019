@@ -609,5 +609,98 @@ function showHeading2(){
       click me
     </button>
     
+	  
+	
+  <body>
+    <head>
+      <style>
+     img{
+      display:none
+      }
+     
+      
+      
+      </style>
+      <h1 id="colour">
+        12 Button game
+      </h1>
+      <p id="noone">
+        Find the button that will hint you to your next step.
+      </p>
+
+      <button onclick="NONE()">Click Me!</button>
+      
+      <button onclick="myFunction(this, 'orange')">Click Me!</button>
+      
+      <button
+        type="button"
+onclick="document.body.style='background-color:teal';">Click Me!</button>
+      <button type="button" onclick="alert('YEET')">Click Me!</button>
+      <button onclick="Showtext()">Click Me!</button>
+<p id="demo"></p>
+
+      <button onclick="timeDate()">Click Me!</button>
+<p id="time"></p>
+      
+      <br>Field1: <input type="text" id="field1" value="Why Do Thus!"><br>
+Field2: <input type="text" id="field2"><br><br>
+
+      
+      
+      <button onclick="showIMG()">Click Me!</button>
+      <img id="Finn" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTovP4moLahaGIDFwWIsiI7ngCal5FN3JIqpcuRZZUVm1jBJNAL:https://www.superherodb.com/pictures2/portraits/11/050/12351.jpg&s">
+      
+      <button onclick="myFunction()">Click Me!</button>
+      
+      <button
+        type="button"
+onclick="document.body.style='background-color:orange';">Click Me!</button>
+    
+<button onclick="c0py()">Click Me!</button>
+      
+<button onclick="window.location.href = 'https://bradleycodeu.github.io/wd/js/12ButtonsGame/';">Click Me!</button>
+      
+     <button id="boi" onclick="mymyFunction()">Click me.</button> 
+      <script>
+        function Showtext() {
+          document.getElementById("demo").innerHTML =
+            "This is the 12 button game and you must find the specific button that does multiple things ex- background color, text size, text color.";
+        }
+     
+      function showIMG(){
+        document.getElementById("Finn").style.display="block";
+      }
+      
+      function timeDate() {
+  document.getElementById("time").innerHTML = Date();
+}
+      
+      function myFunction() {
+  document.getElementById("colour").style.color = "red";
+}
+      
+      function c0py() {
+  document.getElementById("field2").value = document.getElementById("field1").value;
+}
+      
+   function NONE(){
+     document.getElementById("noone").style.display="none"
+   }
+      
+   function mymyFunction() {
+  document.getElementById("boi").innerHTML = "YOU CLICKED ME!";
+}
+     
+      function myFunction(elmnt,clr) {
+  elmnt.style.color = clr;
+}
+      
+        
+      </script>
+    </head>
+  
+
+	  
+	  
   </body>
 </html>
