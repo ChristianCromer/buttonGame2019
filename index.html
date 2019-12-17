@@ -11,7 +11,7 @@
     
     <!-- import the webpage's javascript file -->
     <script src="https://bradleycodeu.github.io/buttonGame2019/script.js" defer></script>
-  </head>
+ 
   <style>
     #thirdButton {
       width: 300px;
@@ -40,7 +40,19 @@
       h1#hidden {
         display: none;
       }
-    </style>
+    
+#myDiv {
+  border: 3px solid red;
+  outline: 3px solid blue;
+}
+  #padding {
+  border: 1px solid #FF0000;
+}
+  #text {
+  text-decoration: underline;
+}
+</style>
+	</head>
   <body>
     <h1>
       Find the button that makes the background a PERFECT green...
@@ -264,18 +276,7 @@
     
     <button onclick = "extremeRandomButtons()"> WHAT DO I DO </button>
 
-    <style>
-#myDiv {
-  border: 3px solid red;
-  outline: 3px solid blue;
-}
-  #padding {
-  border: 1px solid #FF0000;
-}
-  #text {
-  text-decoration: underline;
-}
-</style>
+    
     <script>
   
 function myFunction1() {
@@ -490,7 +491,7 @@ function hideHeading2(){
 function showHeading2(){
   document.getElementById("h2").style.display = "block";
 }
-	    
+	  </script>    
   
     <button id = "showText" onclick = "showText()">
       Show some cool text
@@ -545,7 +546,68 @@ function showHeading2(){
     <button id = "color" onclick = "color()">
       Change my color
     </button>	    
+ <button
+      type="button"
+      onclick="document.body.style='background-color:green;' "
+    >
+      click me</button
+    ><br />
+    <br />
 
-    </script>
+    <button
+      type="button"
+      onclick="document.getElementById('hi').style.display='none';"
+    >
+      click me
+    </button>
+    <br />
+    <br />
+
+    <button
+      id="hi"
+      type="button"
+      onclick="document.body.style='background-color:red;' "
+    >
+      click me
+    </button>
+    <br />
+
+    <br />
+    <button
+      type="button"
+      onclick="document.getElementById('hi').style.display='block';"
+    >
+      click me
+    </button>
+    <br />
+    <br />
+
+    <button
+      type="button"
+      onclick="document.body.style='background-color:black;' "
+    >
+      click me
+    </button>
+
+    <br />
+    <button
+      id="hid"
+      class="hidden"
+      onclick="document.body.style='background-color:blue;' "
+    ></button>
+    <br />
+    <br />
+    <button onclick="document.body.style='background-color:yellow;' ">
+      click me
+    </button>
+    <br />
+    <br />
+    <button onclick="document.body.style='background-color:purple;' ">
+      click me
+    </button>
+      <button onclick="document.body.style='background-color:orange;' ">
+      click me
+    </button>
+    
   </body>
 </html>
